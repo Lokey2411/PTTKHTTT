@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reload without losing select value</title>
+</head>
+<body>
+    <select id="mySelect">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+
+    <button onclick="reloadPage()">Reload Page</button>
+
+    <script>
+        // Save select value to localStorage
+        document.getElementById("mySelect").addEventListener("change", function() {
+            localStorage.setItem("selectedValue", this.value);
+        });
+
+        // Restore select value from localStorage
+        window.onload = function() {
+            var selectedValue = localStorage.getItem("selectedValue");
+            if (selectedValue) {
+                document.getElementById("mySelect").value = selectedValue;
+            }
+        };
+
+        // Reload page
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+</body>
+</html>

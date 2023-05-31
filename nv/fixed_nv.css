@@ -1,0 +1,31 @@
+#myTable>tbody>tr{
+    margin:1px;
+    padding:8px;
+    width: 34px;
+    height: 39.5px;
+}
+
+.dropdown{
+    margin-top: 16px;
+    list-style-type: none;
+    color: #000;
+    margin-right: 10px;
+    padding: 0;
+    font-size: 1.6 rem;
+}
+
+#pageNavPosition{
+    cursor: pointer;
+}
+
+.timkiemnhanvien{
+    position:relative;
+    top:40px;
+}
+#myInput{
+    margin-bottom:10px
+}
+
+.nv{
+    margin-bottom: 10px;
+}
