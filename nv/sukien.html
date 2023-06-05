@@ -190,63 +190,72 @@
             <i class="fas fa-bars"></i>
           </button>
           <a class="navbar-brand" href="#" style="color: #000 !important"
-            ><i class="fa fa-user-circle" aria-hidden="true"></i> QUẢN LÝ DỰ ÁN</a
+            ><i class="fa fa-user-circle" aria-hidden="true"></i> QUẢN LÝ DỰ
+            ÁN</a
           >
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-                    <li ><a href="./custommer.html" data-toggle="tooltip" data-placement="bottom"
-                        title="NHÂN VIÊN" style="color: #000 !important;">NHÂN VIÊN</a></li>
-                    <!-- <li><a href="./diem_danh.html" data-toggle="tooltip" data-placement="bottom"
+            <li>
+              <a
+                href="./custommer.html"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="NHÂN VIÊN"
+                style="color: #000 !important"
+                >NHÂN VIÊN</a
+              >
+            </li>
+            <!-- <li><a href="./diem_danh.html" data-toggle="tooltip" data-placement="bottom"
                         title="ĐIỂM DANH" style="color: #000 !important;">ĐIỂM DANH</a></li> -->
-                    <!-- <li><a href="./luong.html"  data-toggle="tooltip" data-placement="bottom"
+            <!-- <li><a href="./luong.html"  data-toggle="tooltip" data-placement="bottom"
                         title="TIỀN LƯƠNG" style="color: #000 !important;">TIỀN LƯƠNG</a></li> -->
-                    <!-- <li><a href="./lich.html"  data-toggle="tooltip" data-placement="bottom" 
+            <!-- <li><a href="./lich.html"  data-toggle="tooltip" data-placement="bottom" 
                         title="CÔNG TÁC" style="color: #000 !important;">
                         CÔNG TÁC</a></li> -->
-                    <li><a href="./baocao.html"  data-toggle="tooltip" data-placement="bottom"
-                        title="BÁO CÁO" style="color: #000 !important;">BÁO CÁO</a></li> 
-                    <li  class="active"><a href="./sukien.html"  data-toggle="tooltip" data-placement="bottom"
-                        title="DỰ ÁN" style="color: #000 !important;">DỰ ÁN</a></li>
-                    <li>
-                        
-                        <ul class="dropdown">
-                            <li><a href="../"  data-toggle="tooltip" data-placement="bottom"
-                                title="ĐĂNG XUẤT"><b id="log-out">Đăng xuất <i class="fas fa-sign-out-alt"></i></b></a></li>
-                        </ul>
-                    </li>
-
-                </ul>
+            <li>
+              <a
+                href="./baocao.html"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="BÁO CÁO"
+                style="color: #000 !important"
+                >BÁO CÁO</a
+              >
+            </li>
+            <li class="active">
+              <a
+                href="./sukien.html"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="DỰ ÁN"
+                style="color: #000 !important"
+                >DỰ ÁN</a
+              >
+            </li>
+            <li>
+              <ul class="dropdown">
+                <li>
+                  <a
+                    href="../"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    title="ĐĂNG XUẤT"
+                    ><b id="log-out"
+                      >Đăng xuất <i class="fas fa-sign-out-alt"></i></b
+                  ></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
     <div class="container-fluid al">
-<p class="timkiemnhanvien" style="margin-top: 20px;margin-bottom: -20px;">
-            <button onclick="onSearchClick();">TÌM KIẾM DỰ ÁN:</button>
-            <br><br>
-            <ul id = "myList" class="hide" style="margin-top: 50px;margin-bottom: -50px;" >
-                <br>
-                <li onclick="onSeachButtonClick(0);">Mã dự án
-                    <input type="text" class="myInput" onkeyup="myFunction(0)" placeholder="Nhập mã dự án cần tìm..."
-                    data-toggle="tooltip" data-placement="bottom" title="Tìm Kiếm Nhân Viên">
-                </li>
-                <li onclick="onSeachButtonClick(1)">Tên dự án
-                
-                    <input type="text" class="myInput" onkeyup="myFunction(1)" placeholder="Nhập Tên dự án cần tìm..."
-                    data-toggle="tooltip" data-placement="bottom" title="Tìm Kiếm Nhân Viên">
-                </li>
-
-                <li onclick="onSeachButtonClick(2)" class="hide">Người tham gia
-                
-                    <input type="text" class="myInput" onkeyup="myFunction(5)" placeholder="Nhập Người tham gia cần tìm..."
-                    data-toggle="tooltip" data-placement="bottom" title="Tìm Kiếm Nhân Viên">
-                </li>
-            </ul>
-        </b></p>      <br /><br />
       <div class="table-title">
         <div class="row"></div>
       </div>
-      <table class="table table-bordered" id="myTable">
+      <table class="table table-bordered" id="myTable" style="margin-top: 50px">
         <thead>
           <tr class="ex">
             <th>Mã dự án</th>
@@ -259,76 +268,94 @@
         </thead>
         <tbody>
           <tr>
-            <td>A01</td>
-            <td>Dự án quản lý nhân sự</td>
-            <td>22/12/2022</td>
-            <td>2024</td>
+            <td style="text-align: center">A01</td>
+            <td style="text-align: center; font-weight: bold">
+              Dự án quản lý nhân sự
+            </td>
+            <td style="text-align: center">22/12/2022</td>
+            <td style="text-align: center">2024</td>
             <td>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Veritatis odio illum sit accusamus, eius corporis explicabo
               laboriosam sunt commodi nobis asperiores neque inventore facilis
               ipsum quia quos, autem saepe aperiam.
             </td>
-            <td>Nhóm 1</td>
+            <td style="text-align: center">Nhóm 1</td>
           </tr>
           <tr>
-            <td>A02</td>
-            <td>Dự án quản lý bệnh viện</td>
-            <td>15/12/2022</td>
-            <td>2024</td>
-            <td>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis odio illum sit accusamus, eius corporis explicabo laboriosam sunt commodi nobis asperiores neque inventore facilis ipsum quia quos, autem saepe aperiam.
+            <td style="text-align: center">A02</td>
+            <td style="text-align: center; font-weight: bold">
+              Dự án quản lý bệnh viện
             </td>
-            <td>Nhóm 2</td>
-          </tr>
-          <tr>
-            <td>A03</td>
-            <td>Dự án quản lý quán cafe</td>
-            <td>01/01/2023-05/01/2023</td>
-            <td>2024</td>
-            <td>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed provident dolores! A, consequatur voluptas, assumenda ex doloremque eum blanditiis rerum ratione et beatae excepturi est, cum commodi tenetur iure.
-              </td>
-              <td>Nhóm 3</td>
-                    </tr>
-          <tr>
-            <td>A04</td>
-            <td>Dự án quản lý hiệu sách</td>
-            <td>20/01/2023-07/02/2023</td>
-            <td>2024</td>
-            <td>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed
-              provident dolores! A, consequatur voluptas, assumenda ex
-              doloremque eum blanditiis rerum ratione et beatae excepturi est,
-              cum commodi tenetur iure.
-            </td>
-            <td>Nhóm 3</td>
-          </tr>
-          <tr>
-            <td>A05</td>
-            <td>Dự án nhà cái uy tín</td>
-            <td>22/01/2023</td>
-            <td>2024</td>
-            <td>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed
-              provident dolores! A, consequatur voluptas, assumenda ex
-              doloremque eum blanditiis rerum ratione et beatae excepturi est,
-              cum commodi tenetur iure.
-            </td>
-            <td>Nhóm 1</td>
-          </tr>
-          <tr>
-            <td>A06</td>
-            <td>Dự án trang bóng đá uy tín</td>
-            <td>23/01/2023</td>
-            <td>2024</td>
+            <td style="text-align: center">15/12/2022</td>
+            <td style="text-align: center">2024</td>
             <td>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Veritatis odio illum sit accusamus, eius corporis explicabo
               laboriosam sunt commodi nobis asperiores neque inventore facilis
               ipsum quia quos, autem saepe aperiam.
             </td>
-            <td>Nhóm 2</td>
+            <td style="text-align: center">Nhóm 2</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">A03</td>
+            <td style="text-align: center; font-weight: bold">
+              Dự án quản lý quán cafe
+            </td>
+            <td style="text-align: center">01/01/2023-05/01/2023</td>
+            <td style="text-align: center">2024</td>
+            <td>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed
+              provident dolores! A, consequatur voluptas, assumenda ex
+              doloremque eum blanditiis rerum ratione et beatae excepturi est,
+              cum commodi tenetur iure.
+            </td>
+            <td style="text-align: center">Nhóm 3</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">A04</td>
+            <td style="text-align: center; font-weight: bold">
+              Dự án quản lý hiệu sách
+            </td>
+            <td style="text-align: center">20/01/2023-07/02/2023</td>
+            <td style="text-align: center">2024</td>
+            <td>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed
+              provident dolores! A, consequatur voluptas, assumenda ex
+              doloremque eum blanditiis rerum ratione et beatae excepturi est,
+              cum commodi tenetur iure.
+            </td>
+            <td style="text-align: center">Nhóm 3</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">A05</td>
+            <td style="text-align: center; font-weight: bold">
+              Dự án nhà cái uy tín
+            </td>
+            <td style="text-align: center">22/01/2023</td>
+            <td style="text-align: center">2024</td>
+            <td>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed
+              provident dolores! A, consequatur voluptas, assumenda ex
+              doloremque eum blanditiis rerum ratione et beatae excepturi est,
+              cum commodi tenetur iure.
+            </td>
+            <td style="text-align: center">Nhóm 1</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">A06</td>
+            <td style="text-align: center; font-weight: bold">
+              Dự án trang bóng đá uy tín
+            </td>
+            <td style="text-align: center">23/01/2023</td>
+            <td style="text-align: center">2024</td>
+            <td>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis odio illum sit accusamus, eius corporis explicabo
+              laboriosam sunt commodi nobis asperiores neque inventore facilis
+              ipsum quia quos, autem saepe aperiam.
+            </td>
+            <td style="text-align: center">Nhóm 2</td>
           </tr>
         </tbody>
       </table>
@@ -459,7 +486,7 @@
             '<td><input type="text" class="form-control" name="" id="" value="" placeholder="Nhập Thời gian dự kiến hoàn thành"></td>' +
             '<td><input type="text" class="form-control" name="" id="" value="" placeholder="Nhập thông tin chi tiết dự án"></td>' +
             '<td><input type="text" class="form-control" name="" id="" value="" placeholder="Nhập Người tham gia"></td>' +
-            "<td><select >"+
+            "<td><select >" +
             select +
             "</select></td>" +
             "<td>" +
